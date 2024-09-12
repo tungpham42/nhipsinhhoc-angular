@@ -1,0 +1,32 @@
+<form class="mt-4">
+  <div class="row">
+    <div class="col-md-6">
+      <label for="birthdate">Ngày sinh:</label>
+      <input
+        type="date"
+        id="birthdate"
+        [(ngModel)]="birthdate"
+        name="birthdate"
+        class="form-control"
+      />
+    </div>
+    <div class="col-md-6">
+      <label for="targetDate">Ngày muốn tính:</label>
+      <input
+        type="date"
+        id="targetDate"
+        [(ngModel)]="targetDate"
+        name="targetDate"
+        class="form-control"
+        [value]="targetDate"
+      />
+    </div>
+  </div>
+
+  <!-- Button to submit the form -->
+  <div class="text-center mt-4">
+    <button type="button" class="btn btn-primary" (click)="submitForm()">
+      Tính toán chu kỳ sinh học
+    </button>
+  </div>
+</form>
